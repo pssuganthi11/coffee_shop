@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="h-screen
+             bg-[radial-gradient(circle_at_top,_#d4a373_0%,_#a6694c_45%,_#4a2a1a_100%)]
+             flex items-center justify-center">
+    <section id="order" class="flex flex-col items-center justify-center
+           mx-auto w-[60%]
+           text-center text-white space-y-6">
+
+        <span class="text-3xl border-b-2 border-white/40 pb-2 font-[Playfair_Display]">
+            Make an Order
+        </span>
+
+        <div class="w-64 rounded-3xl overflow-hidden
+                bg-white/10 backdrop-blur-md
+                border border-white/20
+                shadow-xl
+                hover:scale-105 transition-transform duration-300">
+
+            <!-- Image -->
+            <div class="h-40 w-full overflow-hidden">
+                <img src="../public/coldcoffee.jpg" alt="Cold Coffee" class="w-full h-full object-cover">
+            </div>
+
+            <div class="p-4">
+                <h3 class="text-xl font-[Playfair_Display] font-semibold">
+                    Cold Coffee
+                </h3>
+                <p class="text-sm text-white/80 mt-1">
+                    Smooth • Chilled • Refreshing
+                </p>
+
+                <a href="#home" class="inline-flex items-center justify-center
+                  mt-4 px-4 py-1
+                  rounded-full
+                  bg-[#3d151e] text-white
+                  text-sm
+                  hover:scale-105 transition-transform">
+                    Order Now
+                </a>
+            </div>
+
+        </div>
+</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</html>

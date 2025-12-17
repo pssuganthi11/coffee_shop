@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/icon4.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Coffee App</title>
+</head>
+
+<body class="sm:bg-[radial-gradient(circle_at_center,_#5a2f1b,__#a6694c,#c08a6b)] bg-[#3d151e]">
+  <div class="mt-10">
+    <header class="flex sm:justify-center justify-between  items-center p-4">
+      <div class="flex justify-between border rounded-full p-3 border-gray-500 space-x-2 items-center sm:hidden">
+        <div class=" w-10 h-10 ">
+          <image src="./public/cofeeicon211.png" width="50" height="50" />
+        </div>
+        <span class="text-4xl font-semibold text-white">Coffee Hunt</span>
+      </div>
+
+      <div class="relative">
+        <nav>
+          <ul
+            class=" hidden sm:flex  items-center space-x-14 font-semibold lg:text-2xl sm:text-sm  bg-[#341d0f] p-4 rounded-full text-white  shadow-lg ">
+            <a href="home" class="cursor-pointer">Home</a>
+            <a href="#about" class="cursor-pointer">About Us</a>
+            <a href="#product" class="cursor-pointer">Product</a>
+            <a href="./src/order.html" target="_blank">Order </a>
+            <a href="#Offers" class="cursor-pointer">Offers </a>
+
+          </ul>
+        </nav>
+        <div class="hidden sm:flex absolute left-[47%]  bottom-[70%] bg-[#341d0f] rounded-full">
+          <img src="./public/cofeeicon211.png" class="w-10 h-10" />
+        </div>
+      </div>
+
+      <div class="sm:hidden relative ">
+
+        <input type="checkbox" id="menu-toggle" class=" peer hidden">
+        <label for="menu-toggle" class="cursor-pointer">
+          <div class="border bg-amber-50 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+            </svg>
+          </div>
+
+        </label>
+        <ul class="absolute hidden peer-checked:block  rounded
+         right-0 top-15 bg-[#341d0f]  w-48 shadow-lg p-4 space-y-3  bg-white/10
+           backdrop-blur-lg
+           border border-white/20
+           shadow-xl ">
+          <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
+            <a href="#home"> Home</a>
+          </li>
+          <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
+            <a href="#about"> About Us</a>
+          </li>
+          <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
+            <a href="#product"> Product</a>
+          </li>
+          <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
+            <a href="./src/order.html" target="_blank">Order </a>
+          </li>
+
+          <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
+            <a href="#Offers">Offers</a>
+          </li>
+
+        </ul>
+      </div>
+    </header>
+    <section id="home" class="sm:flex justify-between p-2 ">
+
+      <div class="hidden sm:flex rounded mx-auto">
+        <img src="./public/image-slider2.png" width="400" height="200" />
+      </div>
+      <div class=" sm:flex flex-col justify-center leading-relaxed mt-2 p-4 sm:w-[50%] ">
+        <p class="text-2xl  sm:text-5xl font-semibold font-[Playfair_Display] text-white text-shadow-lg mb-5">
+          Let's Hunt Your<span class="text-6xl text-[#3d151e]"> coffee...</span>
+        </p>
+        <span class=" text-2xl sm:text-3xl sm:mt-6  text-white text-shadow-lg">
+          From handpicked beans to perfectly brewed cups,
+          we craft coffee that awakens your senses.
+          Every sip is a flavor worth hunting.
+        </span>
+        <div class="mt-20 space-x-3 space-y-2">
+          <a href="#product" class="inline-block text-center p-1 lg:w-[30%] sm:w-[90%] w-[70%]
+            font-semibold text-[#3d151e] sm:text-white font-[Playfair_Display]
+            rounded shadow-lg bg-[#F7E1BC] sm:bg-[#3d151e] transition-transform 
+            hover:scale-110 ">
+            Explore More
+          </a>
+          <a href="./src/order.html" target="blank" class="inline-block text-center p-1 lg:w-[30%] sm:w-[90%] w-[70%]
+            font-semibold text-[#3d151e] sm:text-white font-[Playfair_Display]
+            rounded shadow-lg bg-[#F7E1BC] sm:bg-[#3d151e]  transition-transform 
+            hover:scale-110">
+            Order Now
+          </a>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section id="about" class="flex flex-col items-center justify-center
+         mx-auto mt-40
+         w-[60%]
+         text-center
+         
+         text-white
+         space-y-4 mb-10">
+
+      <span class="text-3xl font-semibold border-b-2">
+        About Us
+      </span>
+
+      <p class="text-2xl leading-relaxed">
+        At Let’s Hunt Your Coffee, we believe great coffee is more than a drink — it’s an experience worth chasing.
+      </p>
+
+      <p class="text-2xl leading-relaxed text-white">
+        We carefully pick our beans from trusted farms, roast them to perfection,
+        and brew every cup with care. From the first aroma to the final sip,
+        our goal is to deliver coffee that awakens your senses and warms your soul.
+      </p>
+
+      <p class="text-2xl leading-relaxed text-white">
+        Since 1970's we Give you Raw teast of coffee beans,wish to be continued ☕☕☕
+      </p>
+
+    </section>
+    <section id="product" class="flex flex-col items-center justify-center
+         mx-auto mt-40
+         w-[60%]
+         text-center
+         
+         text-white
+         space-y-4 mb-10">
+      <span class="text-3xl border-b-2">Products</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9">
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform duration-300">
+
+
+          <div class="h-40 w-full overflow-hidden">
+            <img src="./public/frappy.avif" alt="frappee" class="w-full h-full object-cover">
+          </div>
+
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              frappe
+            </h3>
+          </div>
+
+        </div>
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform ">
+
+          <div class="h-40 w-full overflow-hidden">
+            <img src="./public/latte.jpg" alt="latte" class="w-full h-full object-cover">
+          </div>
+
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              latte
+            </h3>
+          </div>
+
+        </div>
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform duration-300">
+          <div class="h-40 w-full overflow-hidden">
+            <img src="./public/coldcoffee.jpg" alt="coldcoffee" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              coldcoffee
+            </h3>
+          </div>
+        </div>
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform duration-300">
+          <div class="h-40 w-full overflow-hidden">
+            <img src="/public/hotcoffee.jfif" alt="hotcoffee" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              Hot coffee
+            </h3>
+          </div>
+        </div>
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform duration-300">
+          <div class="h-40 w-full overflow-hidden">
+            <img src="./public/expresso.jfif" alt="Espresso" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              Espresso
+            </h3>
+          </div>
+        </div>
+        <div class="w-64 rounded-3xl overflow-hidden
+            bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-xl
+            hover:scale-105 transition-transform duration-300">
+          <div class="h-40 w-full overflow-hidden">
+            <img src="./public/bag.jfif" alt="Espresso" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-[Playfair_Display] text-white font-semibold">
+              Beans
+            </h3>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="max-w-6xl mx-auto px-6 flex flex-col justify-center pb-16 max-auto">
+      <span class="text-2xl mx-auto mb-10 border-b-2 font-[Playfair_Display] text-white font-semibold">Offer</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div
+          class="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:scale-105 transition-transform">
+          <img src="./public/coldcoffee.jpg" alt="Cold Coffee" class="h-44 w-full object-cover" />
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold">Cold Coffee</h3>
+            <p class="text-sm text-white/80 mt-1">Flat 20% OFF</p>
+            <p class="mt-2 line-through text-white/50">₹150</p>
+            <p class="text-2xl font-bold">₹120</p>
+            <button class="mt-4 px-5 py-2 rounded-full bg-[#3d151e] hover:bg-[#5a1f2c] transition text-white/70">Order
+              Now</button>
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:scale-105 transition-transform">
+          <img src="./public/latte.jpg" alt="Latte" class="h-50 w-full object-cover object-center" />
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold">Café Latte</h3>
+            <p class="text-sm text-white/80 mt-1">Buy 1 Get 1 Free</p>
+            <p class="mt-2 text-white/70">Limited Time Offer</p>
+            <button class="mt-6 px-5 py-2 rounded-full bg-[#3d151e] hover:bg-[#5a1f2c] transition text-white/70">Order
+              Now</button>
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:scale-105 transition-transform">
+          <img src="./public/expresso.jfif" alt="Espresso" class="h-44 w-full object-cover object-center " />
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold">Espresso</h3>
+            <p class="text-sm text-white/80 mt-1">Combo Offer</p>
+            <p class="mt-2 text-white/70">Espresso + Cookie</p>
+            <p class="text-2xl font-bold mt-1">₹99</p>
+            <button class="mt-4 px-5 py-2 rounded-full bg-[#3d151e] hover:bg-[#5a1f2c] transition text-white/70">Order
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-sm text-white/60 pb-6">
+      © 2025 Coffee Hunt · All Rights Reserved.
+    </footer>
+  </div>
+</body>
+
+</html>
