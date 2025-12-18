@@ -6,11 +6,11 @@
   <link rel="icon" type="image/svg+xml" href="/public/icon4.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/style.css">
-  <title>Coffee App</title>
+  <title>Coffee Hunt</title>
 </head>
 
 <body class="sm:bg-[radial-gradient(circle_at_center,_#5a2f1b,__#a6694c,#c08a6b)] bg-[#3d151e]">
-  <div class="mt-10">
+  <div class="mt-10 max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6">
     <header class="flex sm:justify-center justify-between  items-center p-4">
       <div class="flex justify-between border rounded-full p-3 border-gray-500 space-x-2 items-center sm:hidden">
         <div class=" w-10 h-10 ">
@@ -26,8 +26,9 @@
             <a href="home" class="cursor-pointer">Home</a>
             <a href="#about" class="cursor-pointer">About Us</a>
             <a href="#product" class="cursor-pointer">Product</a>
-            <a href="./src/order.html" target="_blank">Order </a>
-            <a href="#Offers" class="cursor-pointer">Offers </a>
+            <a href="#order" rel="noopener noreferrer">
+              Order
+            </a> <a href="#Offers" class="cursor-pointer">Offers </a>
 
           </ul>
         </nav>
@@ -62,7 +63,9 @@
             <a href="#product"> Product</a>
           </li>
           <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
-            <a href="/order.html" target="_blank">Order </a>
+            <a href="#order" rel="noopener noreferrer">
+              Order
+            </a>
           </li>
 
           <li class="py-1 bg-[#F7E1BC]  text-[#341d0f] text-2xl rounded-full boxshadow-lg flex justify-center">
@@ -79,27 +82,39 @@
       </div>
       <div class=" sm:flex flex-col justify-center leading-relaxed mt-2 p-4 sm:w-[50%] ">
         <p class="text-2xl  sm:text-5xl font-semibold font-[Playfair_Display] text-white text-shadow-lg mb-5">
-          Let's Hunt Your<span class="text-6xl text-[#3d151e]"> coffee...</span>
+          Let's Hunt Your<span class="text-6xl text-[#F7E1BC] sm:text-[#3d151e]"> coffee...</span>
         </p>
         <span class=" text-2xl sm:text-3xl sm:mt-6  text-white text-shadow-lg">
           From handpicked beans to perfectly brewed cups,
           we craft coffee that awakens your senses.
           Every sip is a flavor worth hunting.
         </span>
-        <div class="mt-20 space-x-3 space-y-2">
-          <a href="#product" class="inline-block text-center p-1 lg:w-[30%] sm:w-[90%] w-[70%]
-            font-semibold text-[#3d151e] sm:text-white font-[Playfair_Display]
-            rounded shadow-lg bg-[#F7E1BC] sm:bg-[#3d151e] transition-transform 
-            hover:scale-110 ">
+        <div class="mt-20 flex flex-col sm:flex-row justify-center items-center gap-6 px-4">
+
+          <a href="#product" class="inline-flex justify-center items-center
+            w-full sm:w-56
+            px-6 py-2
+            font-semibold font-[Playfair_Display]
+            text-[#3d151e] sm:text-white
+            rounded shadow-lg
+            bg-[#F7E1BC] sm:bg-[#3d151e]
+            transition-transform hover:scale-110">
             Explore More
           </a>
-          <a href="/order.html" target="blank" class="inline-block text-center p-1 lg:w-[30%] sm:w-[90%] w-[70%]
-            font-semibold text-[#3d151e] sm:text-white font-[Playfair_Display]
-            rounded shadow-lg bg-[#F7E1BC] sm:bg-[#3d151e]  transition-transform 
-            hover:scale-110">
+
+          <a href="#order" class="inline-flex justify-center items-center
+            w-full sm:w-56
+            px-6 py-2
+            font-semibold font-[Playfair_Display]
+            text-[#3d151e] sm:text-white
+            rounded shadow-lg
+            bg-[#F7E1BC] sm:bg-[#3d151e]
+            transition-transform hover:scale-110">
             Order Now
           </a>
+
         </div>
+
       </div>
 
 
@@ -141,8 +156,8 @@
          text-white
          space-y-4 mb-10">
       <span class="text-3xl border-b-2">Products</span>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9">
-        <div class="w-64 rounded-3xl overflow-hidden
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-9 mt-10 max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 ">
+        <div class=" rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -160,7 +175,7 @@
           </div>
 
         </div>
-        <div class="w-64 rounded-3xl overflow-hidden
+        <div class=" rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -177,7 +192,7 @@
           </div>
 
         </div>
-        <div class="w-64 rounded-3xl overflow-hidden
+        <div class=" rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -191,7 +206,7 @@
             </h3>
           </div>
         </div>
-        <div class="w-64 rounded-3xl overflow-hidden
+        <div class=" rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -205,7 +220,7 @@
             </h3>
           </div>
         </div>
-        <div class="w-64 rounded-3xl overflow-hidden
+        <div class="rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -219,7 +234,7 @@
             </h3>
           </div>
         </div>
-        <div class="w-64 rounded-3xl overflow-hidden
+        <div class="md:w-full rounded-3xl overflow-hidden
             bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-xl
@@ -236,8 +251,157 @@
       </div>
 
     </section>
-    <section class="max-w-6xl mx-auto px-6 flex flex-col justify-center pb-16 max-auto">
-      <span class="text-2xl mx-auto mb-10 border-b-2 font-[Playfair_Display] text-white font-semibold">Offer</span>
+    <section id="order" class="min-h-screen        
+         flex  justify-center ">
+      <div class="mx-auto w-[80%] text-center text-white mt-10 max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 mb-10">
+        <span class="text-3xl border-b-2 border-white/40 pb-2 ">
+          Make an Order
+        </span>
+        <!-- Grid -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-40">
+
+          <!-- Card 1 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/coldcoffee.jpg" alt="Cold Coffee" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Cold Coffee</h3>
+              <p class="text-sm text-white/80 mt-1">Smooth • Chilled • Refreshing</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/latte.jpg" alt="Latte" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Cafe Latte</h3>
+              <p class="text-sm text-white/80 mt-1">Creamy • Rich • Smooth</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/expresso.jfif" alt="Espresso" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Espresso</h3>
+              <p class="text-sm text-white/80 mt-1">Strong • Bold • Intense</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/hotcoffee.jfif" alt="Hot Coffee" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Hot Coffee</h3>
+              <p class="text-sm text-white/80 mt-1">Warm • Classic • Comforting</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+          <!-- Card 1 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/coldcoffee.jpg" alt="Cold Coffee" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Cold Coffee</h3>
+              <p class="text-sm text-white/80 mt-1">Smooth • Chilled • Refreshing</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/latte.jpg" alt="Latte" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Cafe Latte</h3>
+              <p class="text-sm text-white/80 mt-1">Creamy • Rich • Smooth</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/expresso.jfif" alt="Espresso" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Espresso</h3>
+              <p class="text-sm text-white/80 mt-1">Strong • Bold • Intense</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-full rounded-3xl overflow-hidden
+           bg-white/10 backdrop-blur-md
+           border border-white/20 shadow-xl
+           hover:scale-105 transition-transform duration-300">
+            <div class="h-40 w-full overflow-hidden">
+              <img src="/public/bag.jfif" alt="Hot Coffee" class="w-full h-full object-cover object-center" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-[Playfair_Display] font-semibold">Beans</h3>
+              <p class="text-sm text-white/80 mt-1">raw • Classic • Texture</p>
+              <a href="#home" class="mt-4 inline-block px-4 py-1 rounded-full bg-[#3d151e] hover:scale-105 transition">
+                Order Now
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Offers" class="max-w-6xl mx-auto px-6 flex flex-col justify-center pb-16 max-auto min-h-screen ">
+      <span class="text-2xl mx-auto mb-10 border-b-2  text-white font-semibold mt-5">Offers</span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
         <div
           class="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:scale-105 transition-transform">
@@ -255,7 +419,7 @@
           class="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:scale-105 transition-transform">
           <img src="./public/latte.jpg" alt="Latte" class="h-50 w-full object-cover object-center" />
           <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold">Café Latte</h3>
+            <h3 class="text-xl font-semibold">Cafe Latte</h3>
             <p class="text-sm text-white/80 mt-1">Buy 1 Get 1 Free</p>
             <p class="mt-2 text-white/70">Limited Time Offer</p>
             <button class="mt-6 px-5 py-2 rounded-full bg-[#3d151e] hover:bg-[#5a1f2c] transition text-white/70">Order
@@ -277,7 +441,10 @@
       </div>
     </section>
     <footer class="text-center text-sm text-white/60 pb-6">
-      © 2025 Coffee Hunt · All Rights Reserved.
+      © 2026
+      <a href="https://github.com/pssuganthi11" target="_blank"
+        class="font-[Playfair_Display] text-white sm:text-[#5a1f2c] font-semibold">Coffee Hunt</a> · All Rights
+      Reserved.
     </footer>
   </div>
 </body>
