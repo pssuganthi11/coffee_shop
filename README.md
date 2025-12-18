@@ -43,7 +43,7 @@
 <h2>How to install</h2>
 <ul>
   <li>
-    Clone the repo :
+    Clone the repo : https://github.com/pssuganthi11/coffee_shop.git
   </li>
   <li> Run "npm install"</li>
   <li> Run "npm run dev"</li>
